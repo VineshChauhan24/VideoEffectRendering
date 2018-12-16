@@ -12,7 +12,7 @@ extern "C" {
  * FFMPEG For Android 视频编解码
  *
  * Version 3.0
- * 福州大学  李其柄 版权所有
+ * 李其柄 版权所有
  * ****************************************/
 
 JNIEXPORT jint JNICALL Java_cn_dennishucd_VideoEngine_GetFrame(JNIEnv *, jobject, jstring);
