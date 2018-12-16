@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffcccccc">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="35dip"
+             android:orientation="horizontal"
+             android:background="#66cbbccc">
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:text="相关用户"
+                android:textColor="#111111"
+                android:textSize="14sp">
+            </TextView>
+         </LinearLayout>
+         
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="80dip"
+             android:background="#aaffffff"
+             android:orientation="horizontal" >
+             
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:fadingEdge="horizontal"
+            android:fadingEdgeLength="30dip"
+            android:fillViewport="true"
+            android:orientation="horizontal"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/interest_friends_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dip"
+                android:orientation="horizontal"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" >
+            </LinearLayout>
+        </HorizontalScrollView>   
+           
+      
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#66cbaaaa">
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="35dip"
+             android:orientation="horizontal" >
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:text="相关标签"
+                android:textColor="#111111"
+                android:textSize="14sp">
+            </TextView>
+         </LinearLayout>
+    </LinearLayout>
+    
+    <TableLayout
+         android:layout_width="fill_parent"
+         android:layout_height="46dip"
+         android:stretchColumns="*"
+         android:background="#aaffffff"
+         android:padding="10dip">
+         <TableRow>
+             <Button 
+                android:text="真女神"
+                android:layout_height="28dip"
+                android:background="#820f0f"
+
+                android:textColor="#c0c0c0"
+                android:textSize="14sp">
+             </Button>
+             <Button 
+                android:text="女神心情好"
+                android:layout_height="28dip"
+                android:background="#6495ed"
+                android:gravity="center"
+                android:textColor="#c0c0c0"
+                android:textSize="14sp">
+             </Button>
+             <Button
+                android:text="看看女神在做什么"
+                android:layout_height="28dip"
+                android:background="#808080"
+                android:gravity="center"
+                android:textColor="#c0c0c0"
+                android:textSize="14sp">
+             </Button>
+         </TableRow>
+     </TableLayout>
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#66cb9090">
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="35dip"
+             android:orientation="horizontal" >
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:text="相关微视"
+                android:textColor="#111111"
+                android:textSize="14sp">
+            </TextView>
+         </LinearLayout>
+    </LinearLayout>
+    
+   </LinearLayout>
+</LinearLayout>

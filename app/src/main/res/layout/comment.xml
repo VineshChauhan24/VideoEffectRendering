@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kaixin_background"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/global_top_background" >
+
+            <Button
+                android:id="@+id/return_button"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/title_home_button" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:background="@drawable/title_bar_center_button_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="动态详情"
+                    android:textColor="#5e9af4"
+                    android:textSize="18sp" />
+
+                
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/refresh_button"
+                 android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/title_refresh_button" />
+        </LinearLayout>
+
+        
+         
+    </LinearLayout>
+
+    <cn.dennishucd.uibase.XListView
+        android:id="@+id/commentdisplay"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2000"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="#00000000" >
+    </cn.dennishucd.uibase.XListView>
+    
+         <LinearLayout
+        android:id="@+id/comment_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/write_function_bg" 
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/comment_face"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_edit_face_style" />
+
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/edit_input_bg"
+            android:ems="12"
+            android:hint="评论..."
+            android:maxLines="2"
+            android:textSize="14sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/comment_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_edit_send_bg"
+            android:text="发送" 
+            android:textColor="#888888"
+            android:gravity="center"/>
+    </LinearLayout>
+    
+     
+</LinearLayout>

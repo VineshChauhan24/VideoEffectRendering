@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+		    <corners 
+		        android:topLeftRadius="@dimen/corner_list_radius"
+		        android:topRightRadius="@dimen/corner_list_radius"
+		        />
+		   	<solid android:color="@color/nerve_corner_list_press"/>
+		</shape>
+    </item>
+    
+    <item>
+        <shape>
+		    <corners 
+		        android:topLeftRadius="@dimen/corner_list_radius"
+		        android:topRightRadius="@dimen/corner_list_radius"
+		        />
+		   	<solid android:color="#ffffff"/>
+		</shape>
+    </item>
+</selector>

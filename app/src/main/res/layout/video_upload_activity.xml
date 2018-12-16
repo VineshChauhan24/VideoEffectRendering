@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/video_bg"
+    android:orientation="vertical" >
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/video_upload_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/image_filter_action_back_arrow" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上传视频"
+                android:textColor="#cfffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/image_filter_action_forward_arrow" />
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/video_upload_tbl"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:layout_margin="12dip"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerInside"
+            android:src="@drawable/head"/>
+    
+      <RelativeLayout
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent" >
+
+          <ImageView
+              android:id="@+id/voic_display_bg"
+              android:layout_width="fill_parent"
+              android:layout_height="130dip"
+              android:layout_marginLeft="8dip"
+              android:layout_marginRight="8dip"
+              android:layout_marginTop="16dip"
+              android:background="@drawable/upload_photos_bg_topinput" />
+
+          <LinearLayout
+              android:layout_width="0dip"
+              android:layout_height="0dip"
+              android:focusable="true"
+              android:focusableInTouchMode="true" 
+              android:gravity="center"/>
+
+          <EditText
+              android:id="@+id/video_upload_content"
+              android:layout_width="205dip"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dip"
+              android:layout_marginTop="18dip"
+              android:background="@null"
+              android:gravity="top"
+              android:hint="#手机开心发视频#"
+              android:maxLength="140"
+              android:maxLines="3"
+              android:minHeight="50dip"
+              android:scrollbars="vertical"
+              android:textColor="#ff98bede"
+              android:textColorHint="#ff98bede" />
+
+          <ImageView
+              android:id="@+id/voice_display_bottom_bg"
+              android:layout_width="fill_parent"
+              android:layout_height="40dip"
+              android:layout_below="@+id/voic_display_bg"
+              android:layout_marginLeft="10dip"
+              android:layout_marginRight="10dip"
+              android:layout_marginTop="-40dip"
+              android:background="@drawable/record_bg_bottom" />
+
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/voic_display_bg"
+              android:layout_marginLeft="10dip"
+              android:layout_marginRight="10dip"
+              android:layout_marginTop="-40dip"
+              android:gravity="center_vertical"
+              android:orientation="horizontal" >
+
+              <Button
+                  android:id="@+id/voice_display_bottom_photo"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dip"
+                  android:background="@drawable/voice_record_btn_photo" />
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dip"
+                  android:layout_marginTop="6dip"
+                  android:background="@drawable/record_line_separator" />
+
+              <Button
+                  android:id="@+id/video_display_bottom_at"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dip"
+                  android:background="@drawable/voice_record_btn_at" />
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dip"
+                  android:layout_marginTop="6dip"
+                  android:background="@drawable/record_line_separator" />
+
+              <Button
+                  android:id="@+id/video_display_bottom_face"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dip"
+                  android:background="@drawable/voice_record_btn_face" />
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dip"
+                  android:layout_marginTop="6dip"
+                  android:background="@drawable/record_line_separator" />
+
+              <Button
+                  android:id="@+id/video_display_bottom_location"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dip"
+                  android:background="@drawable/voice_record_btn_location" />
+
+              <TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="5dip"
+                  android:layout_weight="1"
+                  android:textColor="#000000"
+                  android:textSize="16sp"
+                  android:textStyle="bold" />
+
+              <Button
+                  android:id="@+id/video_display_bottom_tag"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="10dip"
+                  android:layout_marginTop="2dip"
+                  android:background="@null"
+                  android:drawableRight="@drawable/lbs_lock"
+                  android:text="标签"
+                  android:textColor="#333333"
+                  android:textSize="14sp" />
+          </LinearLayout>
+          <Button
+              android:id="@+id/video_upload_submit"
+              android:layout_width="fill_parent"
+              android:layout_height="60dip"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentLeft="true"
+              android:background="#ffcb9090"
+              android:enabled="true"
+              android:shadowColor="#7f000000"
+              android:shadowDx="0.0"
+              android:shadowDy="1.0"
+              android:shadowRadius="1.0"
+              android:text="分享"
+              android:textColor="#ffffff"
+              android:textSize="26sp" />
+
+          <TextView
+              android:layout_width="50dip"
+              android:layout_marginLeft="20dp"
+              android:layout_marginBottom="20dp"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_above="@+id/video_upload_share"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="同步到"
+              android:textColor="#cfffff"
+              android:textSize="14sp" />
+          
+         <LinearLayout
+              android:id="@+id/video_upload_share"
+              android:layout_width="fill_parent"
+              android:layout_height="50dip"
+              android:layout_above="@+id/video_upload_submit"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:layout_marginBottom="20dp"
+              android:background="#55ffffff"
+              android:gravity="center_vertical"
+              android:orientation="horizontal" >          
+               
+              <TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:text="新浪微博"
+                  android:textColor="#bfffff"
+                  android:textSize="14sp" />
+
+              <TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:text="Facebook"
+                  android:textColor="#bfffff"
+                  android:textSize="14sp" />
+          </LinearLayout>     
+
+      </RelativeLayout>
+
+</LinearLayout>

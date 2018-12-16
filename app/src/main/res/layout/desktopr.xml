@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg"
+    android:paddingLeft="54dip" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:orientation="vertical" 
+          >
+
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingLeft="3dip"
+              android:paddingRight="3dip"
+              android:paddingTop="1dip" >
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:padding="4dip"
+                  android:text="广场"
+                  android:textColor="#ff397cbf"
+                  android:textSize="18sp"
+                  android:textStyle="bold" />
+
+          </LinearLayout>
+          
+          <LinearLayout
+              android:id="@+id/interest_search_layout"
+              android:layout_width="fill_parent"
+              android:layout_height="25dp"
+              android:paddingLeft="3dip"
+              android:paddingRight="3dip"
+              android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/interest_search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_input_bg"
+                    android:drawableLeft="@drawable/globle_search_icon"
+                    android:hint="输入关键字查找"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+          
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingLeft="3dip"
+              android:paddingRight="3dip"
+              android:paddingTop="3dip" >
+                
+             <ImageView
+            android:id="@+id/desktopr_interest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/favorites_add_64" />
+
+             
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="127dp"
+              android:layout_weight="0.16"
+              android:orientation="vertical"
+              android:paddingLeft="2dip"
+              android:paddingRight="2dip"
+              android:paddingTop="3dip" >
+
+              <ImageView
+                  android:id="@+id/desktopr_item_god"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:background="@drawable/desktopr_god"/>
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="145dp"
+              android:layout_weight="0.09"
+              android:orientation="horizontal"
+              android:paddingLeft="2dip"
+              android:paddingRight="2dip"
+              android:paddingTop="2dip" >
+
+              <ImageView
+                  android:id="@+id/desktopr_item_star"
+                  android:layout_width="153dip"
+                  android:layout_height="fill_parent"
+                  android:background="@drawable/desktopr_star" />
+
+              <LinearLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:orientation="vertical" >
+
+                  <LinearLayout
+                      android:layout_width="fill_parent"
+                      android:layout_height="77dip"
+                      android:orientation="vertical"
+                      android:paddingLeft="2dip" >
+
+                      <ImageView
+                          android:id="@+id/desktopr_item_joke"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@drawable/desktopr_joke" />
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/desktopr_item_joke"
+                      android:orientation="vertical"
+                      android:paddingLeft="2dip"
+                      android:paddingTop="2dip" >
+
+                      <ImageView
+                          android:id="@+id/desktopr_item_travel"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:background="@drawable/desktopr_travel" />
+                  </LinearLayout>
+              </LinearLayout>
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="88dp"
+              android:layout_weight="0.03"
+              android:orientation="vertical"
+              android:paddingLeft="2dip"
+              android:paddingRight="2dip"
+              android:paddingTop="2dip" >
+
+              <ImageView
+                  android:id="@+id/desktopr_item_food"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:background="@drawable/desktopr_food" />
+          </LinearLayout>
+      </LinearLayout>
+
+        <include
+            android:id="@+id/desktop_ugcr"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            layout="@layout/ugc_menu_layoutr" />
+
+        
+
+    </FrameLayout>
+</LinearLayout>

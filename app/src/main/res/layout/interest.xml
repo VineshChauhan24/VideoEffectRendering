@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffcccccc">
+    
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcccccc">
+        
+        <LinearLayout
+            android:layout_width="260dip"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/interest_like_search"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:layout_marginTop="6dip"
+                android:layout_weight="1"
+                android:background="@drawable/edit_input_bg"
+                android:drawableLeft="@drawable/globle_search_icon"
+                android:drawablePadding="8dip"
+                android:text="女神"
+                android:textColor="#606060"
+                android:singleLine="true"
+                android:textSize="14sp" /> 
+     </LinearLayout>      
+         
+     <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/interest_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:text="取消"
+                android:textColor="#0068e6"
+                android:textSize="16sp">
+            </TextView>
+      </LinearLayout>               
+    </LinearLayout>
+    
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffcccccc"
+            android:orientation="horizontal"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:padding="10dip">
+ 
+            <Button
+                android:id="@+id/interest_all"
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_weight="1"
+                android:background="#6495ed"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:src="@drawable/bottomtabbutton_separation" />
+            <Button
+                android:id="@+id/interest_friend"
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_weight="1"
+                android:background="#ffffffff"
+                android:text="用户"
+                android:textColor="#6495ed"
+                android:textSize="14sp" />
+             <ImageView
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:src="@drawable/bottomtabbutton_separation" />
+            <Button
+                android:id="@+id/interest_tag"
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_weight="1"
+                android:background="#ffffffff"
+                android:text="标签"
+                android:textColor="#6495ed"
+                android:textSize="14sp" /> 
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:background="#66cbaaaa"
+        android:orientation="vertical" >
+            
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            <cn.dennishucd.uibase.XListView
+                android:id="@+id/interest_display"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:listSelector="#00000000" >
+            </cn.dennishucd.uibase.XListView>  
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

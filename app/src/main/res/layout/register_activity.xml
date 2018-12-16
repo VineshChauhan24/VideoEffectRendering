@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/video_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:scrollbars="vertical" >
+
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="358dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="100dip"
+                android:layout_height="130dip"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerInside"
+               />
+
+            <EditText
+                android:id="@+id/register_uid"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_margin="8dip"
+                android:layout_weight="0.46"
+                android:background="#55cb9090"
+                android:drawableLeft="@drawable/login_icon_account"
+                android:drawablePadding="25dip"
+                android:hint="请输入账号"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="25dip"
+                android:textColor="#ff98bede"
+                android:textColorHint="#ffdddddd" />
+
+            <EditText
+                android:id="@+id/register_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginBottom="8dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:background="#22ffffff"
+                android:drawableLeft="@drawable/login_icon_password"
+                android:drawablePadding="25dip"
+                android:hint="请输入密码"
+                android:paddingLeft="25dip"
+                android:password="true"
+                android:textColor="#ff98bede"
+                android:textColorHint="#ffdddddd" />
+               <EditText
+                android:id="@+id/register_pwdr"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginBottom="8dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:background="#22ffffff"
+                android:drawableLeft="@drawable/login_icon_password"
+                android:drawablePadding="25dip"
+                android:hint="请确认密码"
+                android:paddingLeft="25dip"
+                android:password="true"
+                android:textColor="#ff98bede"
+                android:textColorHint="#ffdddddd" />
+
+            <Button
+                android:id="@+id/register_activity_login"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:background="#ddcb9090"
+                android:enabled="true"
+                android:shadowColor="#7f000000"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:text="注册"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

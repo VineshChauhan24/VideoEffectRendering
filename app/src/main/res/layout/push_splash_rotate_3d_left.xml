@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_left"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="horizontal" >
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/left_leftBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/image_filter_action_back_arrow" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="精彩一刻"
+                android:textColor="#cfffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+     
+      <Button
+            android:id="@+id/left_rightBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/image_filter_action_forward_arrow" />  
+      </LinearLayout>
+      
+   
+
+</RelativeLayout>

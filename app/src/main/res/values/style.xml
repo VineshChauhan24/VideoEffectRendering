@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <style name ="dialog"  parent ="@android:style/Theme.Dialog" >
+         <item name ="android:windowFrame">@null </item ><!-- 边框 -->
+         <item name ="android:windowIsFloating" > true </item ><!-- 是否浮现在activity之上 -->
+         <item name ="android:windowIsTranslucent" > false </item ><!-- 半透明 -->
+         <item name ="android:windowNoTitle" > true </item ><!-- 无标题 -->
+         <item name ="android:windowBackground" >@color/translucent_00</item ><!-- 背景透明 -->
+         <item name ="android:backgroundDimEnabled" > false </item ><!-- 模糊 -->
+     </style >
+     <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.-->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">   
+         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+       <!-- 
+    圆角表格用到的格式与大小值
+    统一在这里定义，方便转换使用
+     -->
+    <dimen name="nerve_corner_arrow_size">17px</dimen>
+    <color name="nerve_corner_list_press">#006ac1</color>
+    <style name="nerve_corner_list_top">
+        <item name="android:background">@drawable/shape_corner_list_top</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="nerve_corner_list_middle" parent="@style/nerve_corner_list_top">
+        <item name="android:background">@drawable/shape_corner_list_middle</item>
+    </style>
+    <style name="nerve_corner_list_bottom" parent="@style/nerve_corner_list_top">
+        <item name="android:background">@drawable/shape_corner_list_bottom</item>
+    </style>
+    
+    
+    <!-- 表格中标题文字 -->
+    <style name="nerver_list_title">
+        <item name="android:textColor">#3D4550</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 表格中内容文字 -->
+    <style name="nerver_list_info" parent="@style/nerver_list_title">
+        <item name="android:textColor">#73A7D8</item>
+    </style>
+    
+    <style name="nerve_arrow">
+        <item name="android:src">@drawable/arrow</item>
+        <item name="android:width">17px</item>
+        <item name="android:height">17px</item>
+    </style>
+    
+</resources >

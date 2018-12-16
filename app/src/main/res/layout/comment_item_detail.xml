@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:padding="1px"
+	android:background="@drawable/kaixin_background">
+	
+	<LinearLayout 
+       android:layout_height="50dp" 
+       android:layout_width="fill_parent"
+       android:layout_marginTop="1dip"
+       android:background="@drawable/news_item_background">
+	<cn.dennishucd.uibase.CircleImageView
+	    android:id="@+id/comment_avatar"
+	    android:layout_marginLeft="3dip"
+		android:layout_height="40dp" 
+		android:layout_width="40dp"
+		android:src="@drawable/icon">
+	</cn.dennishucd.uibase.CircleImageView>
+	<LinearLayout 
+	    android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:gravity="center|left" 
+		android:layout_weight="2">
+		
+		<TextView 
+		    android:text="用户" 
+		    android:id="@+id/comment_name"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+		</TextView>
+		
+		<TextView 
+		    android:text="评论" 
+		    android:id="@+id/comment_content"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+		</TextView>
+	</LinearLayout>
+   </LinearLayout>
+</LinearLayout>

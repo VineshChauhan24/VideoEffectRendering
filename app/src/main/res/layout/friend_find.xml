@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/global_top_background" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_bar_center_button_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#5e9af4" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/friend_find_return"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/title_text_button_left_arrow"
+            android:ellipsize="end"
+            android:maxWidth="80dip"
+            android:minWidth="48dip"
+            android:singleLine="true"
+            android:text="返回"
+            android:textColor="#5e9af4"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:layout_weight="2000"
+        android:background="#FFFFFF" >
+
+        <ImageView
+                android:layout_width="100dip"
+                android:layout_height="130dip"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:src="@drawable/head"
+               />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:text="添加好友" />
+
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal" >
+
+           <EditText
+               android:id="@+id/friend_number"
+               android:layout_width="fill_parent"
+               android:layout_weight="20"
+               android:layout_height="wrap_content" />
+
+           <Button
+               android:id="@+id/friend_find_confirm"
+               style="?android:attr/buttonStyleSmall"
+               android:layout_width="64dp"
+               android:layout_height="33dp"
+               android:background="@drawable/title_text_button"
+               android:text="查找"
+               android:textColor="#5e9af4"
+               android:textStyle="bold" />
+        
+       </LinearLayout>
+       
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal" >
+
+           <ImageView
+               android:id="@+id/friend_avatar"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:src="@drawable/head" />
+
+           <TextView
+               android:id="@+id/friend_name"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="200"
+               android:ellipsize="middle"
+               android:maxWidth="150dip"
+               android:padding="8dip"
+               android:singleLine="true"
+               android:text="查找结果"
+               android:textSize="18sp" />
+
+           <ImageView
+               android:id="@+id/friend_add"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:src="@drawable/button_title_addfriends" />
+
+       </LinearLayout>
+       
+    </LinearLayout>
+
+</LinearLayout>

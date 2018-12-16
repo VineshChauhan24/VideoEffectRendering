@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/kaixin_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/kaixin_background"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/global_top_background" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="生活能量"
+                    android:textColor="#0068e6"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/energy_return"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/title_home_button" />
+
+        </RelativeLayout>
+
+     <cn.dennishucd.uibase.CornerRowLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+   	    android:id="@+id/CornerLayoutx"
+   	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:padding="5dp">     
+     </cn.dennishucd.uibase.CornerRowLayout>
+     
+     <cn.dennishucd.uibase.CornerRowLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+   	    android:id="@+id/CornerLayouty"
+   	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:padding="5dp">
+     </cn.dennishucd.uibase.CornerRowLayout>
+
+     <cn.dennishucd.uibase.CornerRowLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+   	    android:id="@+id/CornerLayoutz"
+   	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:padding="5dp">
+     </cn.dennishucd.uibase.CornerRowLayout>
+       
+  </LinearLayout>
+</LinearLayout>

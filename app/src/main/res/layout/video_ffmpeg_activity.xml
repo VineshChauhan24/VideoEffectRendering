@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@drawable/image_filter_title_bg"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/video_filter_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/image_filter_title_text_btn_bg"
+            android:text="取消"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="特效"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/video_filter_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/image_filter_title_text_btn_bg"
+            android:text="确定"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/black_dot_bg" >
+
+       <SurfaceView
+         android:id="@+id/surface"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_gravity="center"
+ >
+       </SurfaceView>
+       
+        <ImageView
+          android:id="@+id/video_start"
+          android:layout_width="65dip"
+          android:layout_height="65dip"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          android:scaleType="fitCenter"
+          android:src="@drawable/play" />
+     
+    </RelativeLayout>
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_filter_title_bg"
+        android:orientation="horizontal"
+        android:paddingTop="3dip"
+        android:gravity="center" >
+        <!--android:background="@drawable/chosepicbg"
+         <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+          <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/chosepic"
+                android:gravity="center"
+                android:text="一键美化"
+                android:textColor="#FFFFFF" />!-->
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/video_LJ"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:background="@drawable/cc"/>
+         </LinearLayout>
+         
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="8dip"
+             android:gravity="center">
+            <ImageView
+                android:id="@+id/video_MV"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:background="@drawable/dd" />
+         </LinearLayout>
+         
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="8dip"
+             android:gravity="center">
+            <ImageView
+                android:id="@+id/video_redo"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:background="@drawable/bb" />
+         </LinearLayout>
+ 
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:background="@drawable/aa" />
+         </LinearLayout>
+      </LinearLayout>
+    <HorizontalScrollView
+        android:id="@+id/video_handle_LJ"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_bottombannerbg"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="8dip"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:paddingBottom="4dip" >
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/video_LJ01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image_filter_banner_bg"
+                    android:padding="5dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/kx_effects2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="Lomo"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/video_LJ02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image_filter_banner_bg"
+                    android:padding="5dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/kx_effects3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="光照"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/video_LJ03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image_filter_banner_bg"
+                    android:padding="5dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/kx_effects6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="时尚"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/video_LJ04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image_filter_banner_bg"
+                    android:padding="5dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/kx_effects11" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="老照片"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/video_LJ05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image_filter_banner_bg"
+                    android:padding="5dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/kx_effects7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="黑白"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/video_LJ06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image_filter_banner_bg"
+                    android:padding="5dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/kx_effects8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="萤光"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+          
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+    <HorizontalScrollView
+        android:id="@+id/video_handle_MV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_bottombannerbg"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="8dip"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:paddingBottom="4dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/video_MV01"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:background="@drawable/image_filter_banner_bg"
+                    android:padding="3dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/b" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="格子世界"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>        
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/video_MV02"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:background="@drawable/image_filter_banner_bg"
+                    android:padding="3dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/d" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="蔓藤花"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                     android:id="@+id/video_MV03"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:background="@drawable/image_filter_banner_bg"
+                    android:padding="3dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/c" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="摩登时代"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/video_MV04"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:background="@drawable/image_filter_banner_bg"
+                    android:padding="3dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/e" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="彩蝶飞舞"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+          
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+</LinearLayout>

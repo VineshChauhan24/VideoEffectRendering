@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="circleimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+     <declare-styleable name="SeekCircleView">
+        <attr name="max" format="integer" value="15" />
+        <attr name="progress" format="integer" value="0" />
+    </declare-styleable>  
+     <declare-styleable name="sexangleImageView">
+    	<attr name="backcolor" format="integer" />  
+        <attr name="textSize" format="dimension" />  
+        <attr name="big" format="boolean" />  
+        <attr name="home" format="integer" />  
+        <attr name="texts" format="string" />
+    	</declare-styleable>
+</resources>
