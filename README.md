@@ -1,23 +1,26 @@
 # VideoEffectRendering
 
-## 3D GoghMaze Roaming based on GPU and OpenGL Shading
-This project includes several hello-world codes for computer graphic techniques, such as the world coordinate, camera roaming, texture mapping, lighting and shadows. It is implemented using GLSL, which sends the vertex data to the GPU for computing and adds light models to the maze world. Besides, we map the works of Vincent Willem van Gogh to the maze walls.
+## Video Effect Animation based on FFMPEG and JNI
+This is an androind app for video effect rendering. This rendering engine utilizes FFMPEG C++ library to decode and encoder the video to raw images, and exposes the C++ interfaces to JAVA through Java Native Interface (JNI). This ensures sufficiently fast video processing performance. We also design several effects for image filtering and video animation. Note that this engine is now integrated to another project (https://github.com/QibingLee/LifeEnergy), which is a social network video sharing app.
 
 ## Notice
 It is built four years ago, and therefore some functions may be deprecated.
 
-## Demo Video
-You can also see demo.pdf for more details:
-
-<div align=center><img width="70%" height="70%" src="figure/1.png"/></div>
-<div align=center><img width="70%" height="70%" src="figure/2.png"/></div>
-<div align=center><img width="70%" height="70%" src="figure/3.png"/></div>
-
 ## Technical Details
-You can see the technical details from slides: CG_3D_Maze_Roaming.pdf and CG_Texture_and_Light.pdf
-
-We also provide an implementation for "LOVE" particle system, see CG_Particle_System.pdf
-
+The rendering procedure of video effect:
 <div align=center><img width="80%" height="80%" src="figure/11.png"/></div>
+
+The animation resources for “lattice world” effect (in ./effects folder, @hexogon_pattern):
 <div align=center><img width="80%" height="80%" src="figure/22.png"/></div>
 
+
+## Demo Video
+You can watch the youtube video for this engine:
+https://www.youtube.com/watch?v=1cEIneTFN0U
+https://www.youtube.com/watch?v=7lzg2ES1MxU
+https://www.youtube.com/watch?v=g1fMsfgPgxU
+https://www.youtube.com/watch?v=iM-MYYpxxsI
+
+<div align=center><img width="80%" height="80%" src="figure/1.png"/></div>
+<div align=center><img width="80%" height="80%" src="figure/2.png"/></div>
+<div align=center><img width="80%" height="80%" src="figure/3.png"/></div>
