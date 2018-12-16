@@ -1,7 +1,7 @@
 # VideoEffectRendering
 
 ## Video Effect Animation based on FFMPEG and JNI
-This is an androind app for video effect rendering. This rendering engine utilizes FFMPEG C++ library to decode and encoder the video to raw images, and exposes the C++ interfaces to JAVA through Java Native Interface (JNI). This ensures sufficiently fast video processing performance. We also design several effects for image filtering and video animation. Note that this engine is now integrated to another project (https://github.com/QibingLee/LifeEnergy), which is a social network video sharing app.
+This is an androind app for video effect rendering. This rendering engine utilizes FFMPEG C library to decode and encoder the video to raw images, and exposes the C interfaces to JAVA through Java Native Interface (JNI). This ensures sufficiently fast video processing performance. We also design several effects for image filtering and video animation. Note that this engine is now integrated to another project (https://github.com/QibingLee/LifeEnergy), which is a social network video sharing app.
 
 ## Notice
 It is built four years ago, and therefore some functions may be deprecated.
